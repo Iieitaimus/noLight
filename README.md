@@ -1,3 +1,3 @@
-# noLite
+# noLight
 
 # toHighToPlay
