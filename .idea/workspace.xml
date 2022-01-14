@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c81b6d7c-d8b5-4e6a-be01-e1bfd684784b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/noLight.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Plaster17_COL_VAR1_6K.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/biurk.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/biurko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pokoj.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/szafka.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/szafka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/gra.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/noLite.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/gra.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mappa.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mappa.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main_menu.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/biurko.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lozko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pokuj.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pokuj.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Plaster17_COL_VAR1_6K.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bakeeee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/baki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/biurk.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/graa.py" beforeDir="false" afterPath="$PROJECT_DIR$/assets/graa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pokojj.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gra.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gra.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assets/graa.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -63,7 +57,7 @@
       <recent name="C:\URSINA\noLight\scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main_menu">
     <configuration name="gra" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="noLight" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,6 +71,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/gra.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="graa" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="noLight" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\URSINA\noLight\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assets" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assets/graa.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,6 +146,7 @@
       <item itemvalue="Python.gra" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.main_menu" />
+      <item itemvalue="Python.graa" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -149,7 +165,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="second" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
