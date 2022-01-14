@@ -16,10 +16,10 @@ e = Entity(shader=lit_with_shadows_shader)
 Sky()
 
 platform = Entity(model="plane", collider="mesh", texture="grass", scale=200, position=(0, -10, 0), shader=lit_with_shadows_shader)
-model = Entity(model="biurk", texture="bake alll.png", collider="box", scale=2, position=(-4, -10, -5), rotation= Vec3(0,90,0))
+model = Entity(model="biurk", texture="biurko.png", collider="box", scale=2, position=(-4, -10, -5), rotation= Vec3(0,90,0))
 model = Entity(model="szafka", texture="bakeeee.png", collider="mesh", scale=3, position=(5.78, -10, 2))
 model = Entity(model="pokojj", texture="baki.png", collider="mesh", scale=3, position=(0, -10, 0))
 model = Entity(model="lozko", texture="bak.png", collider="mesh", scale=1.5, position=(-2.7, -10, 1.4), rotation= Vec3(0,90,0))
-
+model = Entity(model="schody", texture="bejk.png", collider="mesh", scale=1.5, position=(-2.7, -10, 1.4), rotation= Vec3(0,90,0))
 
 app.run()
