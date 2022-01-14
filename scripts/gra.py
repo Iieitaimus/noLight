@@ -21,6 +21,8 @@ def entities():
     pokoj = Entity(model="pokoj", texture="pokoj.png", collider="mesh", scale=3, position=(0, 0, 0))
     lozko = Entity(model="lozko", texture="lozko.png", collider="mesh", scale=1.5, position=(-2.7, 0, 1.4),
                    rotation=Vec3(0, 90, 0))
+    model = Entity(model="schody", texture="schody.png", collider="mesh", scale=0.8, position=(4.7, 0.8, -5.6),
+                   rotation=Vec3(0, 0, 0))
 
 
 def run():
@@ -33,5 +35,6 @@ def run():
 
     if __name__ == '__main__':
         app.run()
+
 
 run()
