@@ -15,7 +15,7 @@ def light():
 def entities():
     Entity.default_shader = lit_with_shadows_shader
     platform = Entity(model="plane", collider="mesh", texture="grass", scale=50, position=(0, 0, 0))
-    biurko = Entity(model="biurko", texture="biurko.png", collider="box", scale=2, position=(-4, 0, -5),
+    biurko = Entity(model="biurko", texture = "biurko.png", collider="box", scale=2, position=(-4, 0, -5),
                     rotation=Vec3(0, 90, 0))
     szafka = Entity(model="szafka", texture="szafka.png", collider="mesh", scale=3, position=(5.78, 0, 2))
     pokoj = Entity(model="pokoj", texture="pokoj.png", collider="mesh", scale=3, position=(0, 0, 0))
@@ -28,9 +28,10 @@ def run():
     entities()
     light()
     player = FirstPersonController()
+
     #EditorCamera()
 
     if __name__ == '__main__':
         app.run()
 
-
+run()
