@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="93967433-fbdd-4aba-b742-59b129bb07ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/graa.py" beforeDir="false" afterPath="$PROJECT_DIR$/assets/graa.py" afterDir="false" />
+=======
+    <list default="true" id="c81b6d7c-d8b5-4e6a-be01-e1bfd684784b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/biurko.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lozko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pokuj.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pokuj.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Plaster17_COL_VAR1_6K.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bakeeee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/baki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/biurk.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/graa.py" beforeDir="false" afterPath="$PROJECT_DIR$/assets/graa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pokojj.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gra.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gra.py" afterDir="false" />
+>>>>>>> 97d38816307d3148f28452b5496d0c5180eb1f2f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +44,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/graa.py" />
   </component>
   <component name="RunManager">
     <configuration name="graa" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+=======
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assets/graa.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\URSINA\noLight\Scripts" />
+      <recent name="C:\URSINA\noLight\assets" />
+      <recent name="C:\URSINA\noLight\scripts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main_menu">
+    <configuration name="gra" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+>>>>>>> 97d38816307d3148f28452b5496d0c5180eb1f2f
       <module name="noLight" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,6 +83,78 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="graa" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="noLight" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\URSINA\noLight\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assets" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assets/graa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+      <module name="noLight" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\URSINA\noLight\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_menu" type="PythonConfigurationType" factoryName="Python">
+      <module name="noLight" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\URSINA\noLight\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.gra" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main_menu" />
+      <item itemvalue="Python.graa" />
+    </list>
+>>>>>>> 97d38816307d3148f28452b5496d0c5180eb1f2f
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,4 +167,30 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="second" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+>>>>>>> 97d38816307d3148f28452b5496d0c5180eb1f2f
 </project>
