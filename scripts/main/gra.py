@@ -5,7 +5,7 @@ from ursina.shaders import *
 if __name__ == '__main__':
     app = Ursina()
 
-player = FirstPersonController()
+player = FirstPersonController(x = -4)
 
 
 def update():
@@ -32,6 +32,7 @@ def entities():
                    rotation=Vec3(0, 90, 0))
     model = Entity(model="schody", texture="schody.png", collider="mesh", scale=0.8, position=(4.7, 0.8, -5.6),
                    rotation=Vec3(0, 0, 0))
+
 
 
 def run():
