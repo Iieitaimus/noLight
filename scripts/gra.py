@@ -5,6 +5,13 @@ from ursina.shaders import *
 if __name__ == '__main__':
     app = Ursina()
 
+player = FirstPersonController()
+
+
+def update():
+    if held_keys['c']:
+        player.speed = 50
+
 
 def light():
     sun = DirectionalLight()
@@ -29,12 +36,13 @@ def run():
 
     entities()
     light()
-    player = FirstPersonController()
+
 
     #EditorCamera()
 
     if __name__ == '__main__':
         app.run()
 
-
 run()
+
+
