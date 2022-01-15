@@ -24,13 +24,15 @@ def light():
 def entities():
     Entity.default_shader = lit_with_shadows_shader
     platform = Entity(model="plane", collider="mesh", texture="grass", scale=50, position=(0, 0, 0))
-    biurko = Entity(model="biurko", texture = "biurko.png", collider="box", scale=2, position=(-4, 0, -5),
+    biurko = Entity(model="biurko", texture = "biurko.png", collider="box", scale = Vec3(2.3,2,2.4), position=(-3.51, 0.1, -5),
                     rotation=Vec3(0, 90, 0))
     szafka = Entity(model="szafka", texture="szafka.png", collider="mesh", scale=3, position=(5.78, 0, 2))
     pokoj = Entity(model="pokoj", texture="pokoj.png", collider="mesh", scale=3, position=(0, 0, 0))
     lozko = Entity(model="lozko", texture="lozko.png", collider="mesh", scale=1.5, position=(-2.7, 0, 1.4),
                    rotation=Vec3(0, 90, 0))
-    model = Entity(model="schody", texture="schody.png", collider="mesh", scale=0.8, position=(4.7, 0.8, -5.6),
+    model = Entity(model="schody", texture="schody.png", collider="mesh", scale = Vec3(1.5,0.7,1), position=(4.7, 0.8, -5.6),
+                   rotation=Vec3(0, 0, 0))
+    model = Entity(model="podloga", texture="podloga.png", collider="mesh", scale=3, position=(0, 0.01, 0),
                    rotation=Vec3(0, 0, 0))
 
 
