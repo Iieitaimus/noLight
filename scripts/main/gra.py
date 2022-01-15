@@ -9,8 +9,10 @@ player = FirstPersonController()
 
 
 def update():
-    if held_keys['c']:
-        player.speed = 50
+    if held_keys['shift']:
+        player.speed = 10
+    else:
+        player.speed = 5
 
 
 def light():
