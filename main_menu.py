@@ -17,7 +17,7 @@ menu_parent = Entity(parent=camera.ui, y=.15)
 main_menu = Entity(parent=menu_parent)
 load_menu = Entity(parent=menu_parent)
 options_menu = Entity(parent=menu_parent)
-background = Entity(model='quad', texture='back', parent=camera.ui, scale=(camera.aspect_ratio, 1), color=color.white,
+background = Entity(model='quad', texture='bg', parent=camera.ui, scale=(camera.aspect_ratio, 1), color=color.white,
                     z=1)
 
 state_handler = Animator({
