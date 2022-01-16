@@ -41,7 +41,6 @@ for i, e in enumerate(main_menu.buttons):
 def start_game():
     menu_parent.enabled = False
     scene.clear()
-    from scripts.main import gra
 
 
 # load menu content
