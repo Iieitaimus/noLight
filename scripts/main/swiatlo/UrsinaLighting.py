@@ -30,7 +30,7 @@ class LitInit(Entity):
 class LitObject(Entity):
     def __init__(self, model = 'plane', scale = 1, position = (0, 0, 0), rotation = (0, 0, 0), texture = None, collider = None,
                  color = rgb(255, 255, 255), tiling = Vec2(1), lightDirection = Vec3(0), lightColor = Vec3(1),
-                 smoothness = 128, ambientStrength = 0.06, normalMap = None, specularMap = None, water = False, cubemap = "swiatlo/textures/cubemap_#.jpg", cubemapIntensity = 0,
+                 smoothness = 300, ambientStrength = 0.05, normalMap = None, specularMap = None, water = False, cubemap = "swiatlo/textures/cubemap_#.jpg", cubemapIntensity = 0,
                  onUpdate = lambda self: None, **kwargs):
         super().__init__(
             shader = LitShader,
@@ -117,7 +117,6 @@ class LitPointLight():
     def setColor(self, color = Vec3(1)):
         self.color = color
         LitLightList[self.listIndex].xyz = color
-
 
 class LitSpotLight():
     def __init__(self, position = Vec3(0), color = Vec3(1), range = 20, intensity = 1, direction = Vec3(0), angle = 30):

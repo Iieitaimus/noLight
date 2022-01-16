@@ -8,21 +8,24 @@ if __name__ == '__main__':
 
 player = FirstPersonController(scale=1.5) #(model="postac", texture="postac.png", scale=1.5, collider="mesh")
 player.cursor = Entity(parent=camera.ui, model ="circle", scale=0.01, color =color.black)
-gun = Entity(model='latarka',texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1,)
+player.gun = None
+gun = Entity(model='latarka',texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1)
+# player = FirstPersonController()
+# player.cursor = Entity(parent=camera.ui, model="circle", color =color.black, scale=.009)
 
-player = FirstPersonController()
-player.cursor = Entity(parent=camera.ui, model="circle", color =color.black, scale=.009)
 
-def update():
-    if held_keys['shift']:
-        player.speed = 10
-    else:
-        player.speed = 5
+def input(key):
+    if key == 'left mouse down':
+        bullet = LitPointLight(position=gun.position)
+        destroy(bullet, 1)
+        #bullet.world_parent = scene
+        #bullet.animate_position(bullet.position + (bullet.forward * 50), curve=curve.linear, duration=1)
+
 
 
 def light():
 
-     sun = LitDirectionalLight(direction = Vec3(3, -1, -3))
+    sun = LitDirectionalLight(direction = Vec3(3, -1, -3))
 
 
 def entities():
@@ -50,19 +53,14 @@ def entities():
     okno = LitObject(model="okno", texture="okno.png", collider="mesh", scale=3, position=(0, 0, 0))
     drzwi = LitObject(model="drzwi", texture="drzwi.png", collider="mesh", scale = Vec3(3,2.95,3), position=(0, 0.12, 0))
     listwa = LitObject(model="listwa2", texture="listwa2.png", collider="mesh", scale=3, position=(0, 0, 0))
-
+    #print(latarka.position)
 
 def run():
-
-
 
     entities()
     light()
 
-
     #EditorCamera()
-
-
 
 
     if __name__ == '__main__':
