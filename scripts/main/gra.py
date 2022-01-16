@@ -44,13 +44,12 @@ def entities():
                    rotation=Vec3(0, 0, 0))
     listwa = LitObject(model="listwa", texture="podloga.png", collider="mesh", scale=3, position=(0, 0, 0))
     krzeslo = LitObject(model="krzeslo", texture="krzeslo.png", collider="box", scale=2.2, position=(-3.51, 0.2, -3.7), rotation=Vec3(0, 180, 0))
-    okno = LitObject(model="okno", texture="okno.png", scale=3, position=(0, 0, 0))
     latarka = LitObject(model="latarka", texture="latarka.png", collider="mesh", scale=0.3, position=(3.76, 2.1, 2.3), rotation=Vec3(0, 90, 0))
     krzeslo = LitObject(model="krzeslo", texture="krzeslo.png", collider="box", scale=2.2, position=(-3.51, 0.2, -3.7), rotation=Vec3(0, 180, 0))
-    okno = LitObject(model="okno", texture="okno.png", collider="mesh", scale=3, position=(0, 0, 0))
+    okno = LitObject(model="okno", texture="okno.png", collider="mesh", scale=3, position=(-6.3, 4.6, -3.75))
     drzwi = LitObject(model="drzwi", texture="drzwi.png", collider="mesh", scale = Vec3(3,2.95,3), position=(0, 0.12, 0))
     listwa = LitObject(model="listwa2", texture="listwa2.png", collider="mesh", scale=3, position=(0, 0, 0))
-
+#toDo okno naprawic bo jest zjebane
 
 def run():
 
