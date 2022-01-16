@@ -11,7 +11,7 @@ player.cursor = Entity(parent=camera.ui, model ="circle", scale=0.01, color =col
 gun = Entity(model='latarka',texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1,)
 
 player = FirstPersonController()
-player.cursor = Entity(parent=camera.ui, model="lozko", scale=.008)
+player.cursor = Entity(parent=camera.ui, model="circle", color =color.black, scale=.009)
 
 def update():
     if held_keys['shift']:
@@ -22,7 +22,7 @@ def update():
 
 def light():
 
-     sun = LitDirectionalLight(direction = Vec3(1, -1, -1))
+     sun = LitDirectionalLight(direction = Vec3(3, -1, -3))
 
 
 def entities():
@@ -32,10 +32,8 @@ def entities():
     drzewo = LitObject(model="drzewo", texture="drzewo.png", scale=2, position=(-3, 1, 2))
     szafka = LitObject(model="szafka", texture="szafka.png", collider="box", scale=3, position=(3, 2, 2.2))
     skybox = Sky(model="sphere", double_sided=True, texture="load", rotation=(0, 90, 0))
-    platform = LitObject(model="plane", collider="mesh", texture="grass", scale=50, position=(0, 0, 0))
     biurko = LitObject(model="biurko", texture = "biurko.png", collider="box", scale = Vec3(2.3,2,2.4), position=(-3.51, 0.1, -4.7),
                     rotation=Vec3(0, 90, 0))
-    szafka = LitObject(model="szafka", texture="szafka.png", collider="mesh", scale=3, position=(5.76, 0, 1.9))
     sciany = LitObject(model="sciany", texture="sciana.jpg", collider="mesh", scale=3, position=(0, 0, 0))
     sufit = LitObject(model="sufit", texture="sciana.jpg", collider="mesh", scale=3, position=(0, 0, 0))
     lozko = LitObject(model="lozko", texture="lozko.png", collider="mesh", scale=1.5, position=(-2.7, 0, 1.4),
