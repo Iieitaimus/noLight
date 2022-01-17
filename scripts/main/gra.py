@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
 player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0), scale= 1.5) #(model="postac", texture="postac.png", scale=1.5, collider="mesh")
 player.cursor = Entity(parent=camera.ui, model="circle", color =color.black, scale=.009)
-gun = Entity(model='latarka',texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1,)
+gun = LitObject(model='latarka',texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1,)
 isOn = False
 t = 0
 delay = 0
@@ -81,6 +81,8 @@ def entities():
     klawa = LitObject(model="klawa", texture="klawa.png", scale=0.5, position=(-3.4, 1.83, -4.2))
     monitor = LitObject(model="monitor", texture="monitor.png", scale=1.1, position=(-3.4, 2.6, -5), rotation=Vec3(0, 90, 0))
     komputer = LitObject(model="komputer", texture="komputer.png", scale=0.8, position=(-5.3, 2.4, -4.8), rotation=Vec3(0, 90, 0))
+    lampa = LitObject(model="lampa", texture="lampa.png", scale=1, position=(0, 5, -1))
+
 
 
 def run():
