@@ -19,11 +19,6 @@ player.cursor = LitObject(parent=camera.ui, model="circle", color =color.black, 
 gun = LitObject(model='latarka',texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1,)
 
 
-def light():
-
-     sun = LitDirectionalLight(direction = Vec3(3, -1, -3))
-
-
 def update():
     global t, delay, c, flash
     t += time.dt
@@ -55,6 +50,10 @@ def update():
     else:
         player.speed = 5
 
+
+def light():
+    sun = LitDirectionalLight(direction=Vec3(3, -1, -3))
+    lampka = LitSpotLight(position=Vec3(0, 5, -1), direction=Vec3(.5, -1, -.5), range=50, intensity=1, angle=20)
 
 def entities():
     Entity.default_shader = lit_with_shadows_shader
