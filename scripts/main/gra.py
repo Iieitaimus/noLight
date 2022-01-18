@@ -27,10 +27,10 @@ def update():
 
     if isOn:
         if c == 0:
-            flash = LitSpotLight(position=gun.position, direction=mouse.world_point, range=50, intensity=1, angle=5)
+            flash = LitSpotLight(position=camera.forward, direction=mouse.world_point, range=5, intensity=0.05, angle=10)
             c = 1
         if c != 0:
-            flash.setPosition(gun.position)
+            flash.setPosition(camera.rotation)
             flash.setDirection(mouse.world_point)
             flash.setIntensity(1)
     else:
@@ -56,9 +56,9 @@ def update():
 def entities():
     Entity.default_shader = lit_with_shadows_shader
     platform = LitObject(model="plane", texture="grass", scale = Vec3(10, 2, 20), position=(-11, 3.5, -4))
-    drzewo = LitObject(model="drzewo", texture="drzewo.png", scale=2, position=(-3, 1, 0))
-    drzewo = LitObject(model="drzewo", texture="drzewo.png", scale=2, position=(-3, 1, 2))
-    szafka = LitObject(model="szafka", texture="szafka.png", collider="box", scale=3, position=(3, 2, 2.2))
+    #drzewo = LitObject(model="drzewo", texture="drzewo.png", scale=2, position=(-3, 1, 0))
+    #drzewo = LitObject(model="drzewo", texture="drzewo.png", scale=2, position=(-3, 1, 2))
+    szafka = LitObject(model="szafka", texture="szafka.png", scale=3, collider="box", position=(3, 2, 2.2))
     skybox = Sky(model="sphere", double_sided=True, texture="load", rotation=(0, 90, 0))
     biurko = LitObject(model="biurko", texture="biurko.png", collider="box", scale=Vec3(2.3, 4, 2.4), position=(-3.51, 0.1, -4.7),
                     rotation=Vec3(0, 90, 0))
@@ -69,12 +69,11 @@ def entities():
                    rotation=Vec3(0, 90, 0))
     schody = LitObject(model="schody", texture="schody.png", collider="mesh", scale=Vec3(1, 0.7, 1), position=(4.5, 0.8, -5.6),
                    rotation=Vec3(0, 0, 0))
-    podloga = LitObject(model="podloga", texture="podloga.png", collider="mesh", scale=3, position=(0, 0.01, 0), rotation =Vec3(0, 0, 0))
-    listwa = LitObject(model="listwa", texture="podloga.png", collider="mesh", scale=3, position=(0, 0, 0))
+    podloga = LitObject(model="podloga", texture="podloga.png", collider="mesh", scale=3, position=(0, 0.1, -1.5), rotation =Vec3(0, 0, 0))
     latarka = LitObject(model="latarka", texture="latarka.png", collider="box", scale=0.3, position=(3.76, 2.1, 2.3), rotation=Vec3(0, 90, 0))
     krzeslo = LitObject(model="krzeslo", texture="krzeslo.png", collider="mesh", scale=2.2, position=(-3.5, 0.2, -3.3), rotation=Vec3(0, 180, 0))
     okno = LitObject(model="okno", texture="okno.png", collider="mesh", scale=3, position=(-6.3, 4.6, -3.75))
-    drzwi = LitObject(model="drzwi", texture="drzwi.png", collider="box", scale=Vec3(3, 3, 3), position=(4.5, 3.5, -6))
+    drzwi = LitObject(model="drzwi", texture="drzwi.png", collider="mesh", scale=Vec3(3, 3, 3), position=(4.5, 3.5, -6))
     listwa = LitObject(model="listwa2", texture="listwa2.png", scale=3, position=(0, 0, 0))
     klawa = LitObject(model="klawa", texture="klawa.png", scale=0.5, position=(-3.4, 1.83, -4.2))
     monitor = LitObject(model="monitor", texture="monitor.png", scale=1.1, position=(-3.4, 2.6, -5), rotation=Vec3(0, 90, 0))
