@@ -9,7 +9,7 @@ class MainMenu:
             scale=Vec3(15, 8.5, 0),
         )
         self.play = Button(
-            text='play',
+            icon= 'bg',
             scale=(.25, .075),
             color=color.azure,
             on_click=play,
@@ -36,6 +36,5 @@ class MainMenu:
     def cleanDel(self):
         destroy(self.bg)
         destroy(self.play)
-        # destroy(self.settings)
-        # destroy(self.quit)
+        destroy(self.quit)
         del self
