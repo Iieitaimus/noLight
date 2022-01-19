@@ -81,7 +81,7 @@ def entities():
     drzwi = LitObject(
         model="drzwi",
         texture="drzwi.png",
-        collider="mesh",
+        collider="box",
         scale=3,
         position=(4.5, 3.5, -6))
     listwa = LitObject(
@@ -112,7 +112,7 @@ def entities():
         texture="lampa.png",
         scale=1,
         position=(0, 5, -1),
-        collider="box")
+        collider="mesh")
     kratka = LitObject(
         model="kratka",
         texture="kratka.png",

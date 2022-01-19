@@ -17,7 +17,7 @@ mouse.visible = False
 player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0),scale=1.5)  # (model="postac", texture="postac.png", scale=1.5, collider="mesh")
 player.cursor = LitObject(parent=camera.ui, model="circle", color=color.black, scale=.009)
 player.gun = LitObject(model='latarka', texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1, )
-
+window.fullscreen = True
 
 
 def update():
@@ -55,8 +55,8 @@ def update():
 
 
 def light():
-    sun = LitDirectionalLight(direction=Vec3(3, -1, -3))
-    lampka = LitPointLight(position=Vec3(0, 4.8, -1), range=10, intensity=0.5)
+    moon = LitDirectionalLight(direction=Vec3(1.5, -1, 0), color=color.light_gray)
+    #lampka = LitPointLight(position=Vec3(0, 4.8, -1), range=10, intensity=0.5)
     #test= LitObject(model="cube", position=Vec3(0, 4.8, -1), color=color.light_gray, scale=0.1)
 
 

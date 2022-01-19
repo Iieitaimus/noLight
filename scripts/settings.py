@@ -1,5 +1,5 @@
 video_settings = {
-    'window_fullscreen': False,
+    'window_fullscreen': True,
     'window_size': (1920, 1080),
     'window_vsync': True,
     'video_max_fps': 60,
