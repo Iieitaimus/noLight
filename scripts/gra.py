@@ -1,7 +1,6 @@
 from ursina import *
 from UrsinaLighting import LitSpotLight, LitDirectionalLight, LitObject, LitInit
 from ursina.prefabs.first_person_controller import FirstPersonController
-from ursina.shaders import *
 from ursina.prefabs.memory_counter import MemoryCounter
 from load_entities import entities
 isOn = False
@@ -13,8 +12,7 @@ flash = None
 if __name__ == '__main__':
     app = Ursina()
 mouse.visible = False
-player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0),
-                               scale=1.5)  # (model="postac", texture="postac.png", scale=1.5, collider="mesh")
+player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0),scale=1.5)  # (model="postac", texture="postac.png", scale=1.5, collider="mesh")
 player.cursor = LitObject(parent=camera.ui, model="circle", color=color.black, scale=.009)
 player.gun = LitObject(model='latarka', texture="latarka.png", parent=camera, position=(0.1, -0.1, 0.2), scale=0.1, )
 
@@ -23,16 +21,13 @@ def update():
     global t, delay, c, flash
     t += time.dt
     delay += time.dt
-    print(mouse.world_normal)
     if isOn:
         if c == 0:
             flash = LitSpotLight(position=camera.position, direction=mouse.world_point, range=50, intensity=1, angle=5)
             c = 1
         if c != 0:
             flash.setPosition(camera.position)
-            flash.setDirection(
-                mouse.world_point)  # (mouse.world_point.x, -90, mouse.world_point.z) if mouse.world_point.y <= .190324 else mouse.world_point)
-
+            flash.setDirection(mouse.world_point)
             flash.setIntensity(1)
     else:
         try:
@@ -58,7 +53,6 @@ def light():
     sun = LitDirectionalLight(direction=Vec3(3, -1, -3))
     lampka = LitSpotLight(position=Vec3(0, 5, -1), direction=Vec3(5.91282, 3.33286, -2.2778), range=50, intensity=1,
                           angle=20)  # .5, -1, -.5    0, 5, -1
-
 
 
 def run():
