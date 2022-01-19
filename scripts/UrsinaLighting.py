@@ -1,20 +1,8 @@
 from ursina import *
 import numpy as np
-import os
 
-# path = 'assets/shaders'
-# dirname = os.path.dirname(path)
-# vert = open(os.path.join(dirname, 'vert.gls'), "r")
-# frag = open(os.path.join(dirname, 'frag.glsl'), "r")
-
-# vert = open(os.path.join('assets', 'shaders', 'vert.glsl'), "r")
-# frag = open(os.path.join('assets', 'shaders', 'frag.glsl'), "r")
-# relative_path = os.path.relpath(path, start)
 vert = open("assets/shaders/vert.glsl", "r")
 frag = open("assets/shaders/frag.glsl", "r")
-# vert = open("shaders/vert.glsl", "r")
-# frag = open("shaders/frag.glsl", "r")
-
 
 LitShader = Shader(language=Shader.GLSL, vertex=vert.read(), fragment=frag.read())
 vert.close()
