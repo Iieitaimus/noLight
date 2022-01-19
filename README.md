@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, we are toHighToPlay</h1>
+<h1 align="center">Hi 👋, we are tooHigh2Play</h1>
 <h3 align="center">Ursina developers from Poland</h3>
 <h3 align="center">Happily we presents noLight game made by the use of ursina engine
 ʕ •ᴥ•ʔゝ□</h3
