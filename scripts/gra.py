@@ -1,7 +1,6 @@
 from ursina import *
-from UrsinaLighting import LitSpotLight, LitDirectionalLight, LitObject, LitInit
+from UrsinaLighting import LitSpotLight, LitDirectionalLight, LitObject, LitPointLight
 from ursina.prefabs.first_person_controller import FirstPersonController
-from ursina.prefabs.memory_counter import MemoryCounter
 from load_entities import entities
 from ursina.mesh import *
 
@@ -57,7 +56,8 @@ def update():
 
 def light():
     sun = LitDirectionalLight(direction=Vec3(3, -1, -3))
-    lampka = LitSpotLight(position=Vec3(0, 4, -1), direction=Vec3(0, -1, 0), range=10, intensity=1, angle=10)
+    lampka = LitPointLight(position=Vec3(0, 4.8, -1), range=10, intensity=0.5)
+    #test= LitObject(model="cube", position=Vec3(0, 4.8, -1), color=color.light_gray, scale=0.1)
 
 
 
@@ -87,5 +87,4 @@ def input(key):
         e = Audio('latarka.mp3')
 
 
-MemoryCounter()
 run()

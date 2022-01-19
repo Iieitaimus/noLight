@@ -10,20 +10,18 @@ def entities():
         texture="grass",
         scale=Vec3(10, 2, 20),
         position=(-11, 3.5, -4))
-    drzewo1 = LitObject(
-        model="drzewo",
-        texture="drzewo.png",
-        scale=2,
-        position=(-3, 1, 0))
-    drzewo2 = LitObject(
-        parent=drzewo1,
-        position=(-3, 1, 2))
     szafka = LitObject(
         model="szafka",
         texture="szafka.png",
         collider="box",
-        scale=3,
-        position=(3, 2, 2.2))
+        scale=Vec3(2.4, 3, 2.1),
+        position=(5.4, 2, 1), rotation=(0, 90, 0))
+    szafa = LitObject(
+        model="szafa",
+        texture="szafa.png",
+        collider="box",
+        scale=0.7,
+        position=(2, 2.5, 2.2), rotation=(0, -90, 0))
     skybox = Sky(
         model="sphere",
         double_sided=True,
@@ -67,19 +65,6 @@ def entities():
         texture="podloga.png",
         collider="mesh", scale=3,
         position=(0, 0.1, -1.5))
-    listwa = LitObject(
-        model="listwa",
-        texture="podloga.png",
-        collider="mesh",
-        scale=3,
-        position=(0, 0, 0))
-    latarka = LitObject(
-        model="latarka",
-        texture="latarka.png",
-        collider="box",
-        scale=0.3,
-        position=(3.76, 2.1, 2.3),
-        rotation=Vec3(0, 90, 0))
     krzeslo = LitObject(
         model="krzeslo",
         texture="krzeslo.png",
@@ -114,7 +99,7 @@ def entities():
         model="monitor",
         texture="monitor.png",
         scale=1.1,
-        position=(-3.4, 2.4, -4.8),
+        position=(-3.4, 2.6, -4.8),
         rotation=Vec3(0, 90, 0))
     komputer = LitObject(
         model="komputer",
