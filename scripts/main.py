@@ -21,6 +21,7 @@ class Game(Ursina):
         window.borderless = False
         window.exit_button.input = None
 
+
     @staticmethod
     def applyAppSettings():
         window.title = app_settings['title']
@@ -29,13 +30,13 @@ class Game(Ursina):
         self.load = LoadingScreen()
         self.mm.cleanDel()
         thread.start_new_thread(function=entities(), args='')
+
     def start(self):
         self.applyAppSettings()
         self.applyVideoSettings()
 
-    def cos(self):
 
-        self.load.cleanDel()
+
 if __name__ == '__main__':
     game = Game(spawn=Vec3(0,0,0))
     game.start()

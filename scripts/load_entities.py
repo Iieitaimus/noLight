@@ -36,12 +36,12 @@ def entities():
         scale=Vec3(2.3, 4, 2.4),
         position=(-3.51, 0.1, -4.7),
         rotation=Vec3(0, 90, 0))
-    # biurko.collider = BoxCollider(biurko, size=Vec3(1.2,3,2))
+    biurko.collider = BoxCollider(biurko, size=Vec3(1.2, 3, 2))
     sciany = LitObject(
         model="sciany",
         texture="sciana.jpg",
         collider="mesh", scale=3,
-        position=(.001, 0, .001))
+        position=(0, 0, 0))
     sufit = LitObject(
         model="sufit",
         texture="sciana.jpg",
@@ -66,7 +66,7 @@ def entities():
         model="podloga",
         texture="podloga.png",
         collider="mesh", scale=3,
-        position=(0, 0.01, 0))
+        position=(0, 0.1, -1.5))
     listwa = LitObject(
         model="listwa",
         texture="podloga.png",
@@ -97,8 +97,8 @@ def entities():
         model="drzwi",
         texture="drzwi.png",
         collider="mesh",
-        scale=Vec3(3, 2.95, 3),
-        position=(0, 0.12, 0))
+        scale=3,
+        position=(4.5, 3.5, -6))
     listwa = LitObject(
         model="listwa2",
         texture="listwa2.png",
@@ -114,7 +114,7 @@ def entities():
         model="monitor",
         texture="monitor.png",
         scale=1.1,
-        position=(-3.4, 2.6, -5),
+        position=(-3.4, 2.4, -4.8),
         rotation=Vec3(0, 90, 0))
     komputer = LitObject(
         model="komputer",
@@ -127,11 +127,4 @@ def entities():
         texture="lampa.png",
         scale=1,
         position=(0, 5, -1),
-        collider="mesh")
-    test = LitObject(
-        model='cube',
-        color=color.blue,
-        scale=1,
-        position=(5.91282, 3.33286, -2.2778))
-    test.collider = BoxCollider(test, size=(2,2,2))
-
+        collider="box")

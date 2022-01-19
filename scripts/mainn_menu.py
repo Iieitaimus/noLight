@@ -9,32 +9,28 @@ class MainMenu:
             scale=Vec3(15, 8.5, 0),
         )
         self.play = Button(
-            icon= 'bg',
-            scale=(.25, .075),
+            icon= 'start',
+            scale=(.5, .15),
             color=color.azure,
+            position=(-.6, -.4, 0),
             on_click=play,
-            tooltip=Tooltip("Play")
+        )
+        self.options = Button(
+            scale=(.50, .15),
+            icon="options",
+            on_click=Sequence(Wait(.01), Func(sys.exit)),
+            position= self.play.position + Vec3(0.6, 0, 0)
         )
         self.quit = Button(
-            text='quit',
-            scale=(.25, .075),
-            color=color.azure,
+            scale=(.50, .15),
+            icon="quit",
             on_click=Sequence(Wait(.01), Func(sys.exit)),
-            position= self.play.position + Vec3(0, -0.1, 0)
+            position=self.options.position + Vec3(0.6, 0, 0)
         )
-        # self.settings = Button(
-        #     texture='btn_sett',
-        #     position=Vec3(),
-        #     enabled=False,
-        # )
-        # self.quit = Button(
-        #     texture='btn_quit',
-        #     position=Vec3(),
-        #     enabled=False,
-        # )
 
     def cleanDel(self):
         destroy(self.bg)
         destroy(self.play)
+        destroy(self.options)
         destroy(self.quit)
         del self
