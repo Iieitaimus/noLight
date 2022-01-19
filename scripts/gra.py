@@ -55,7 +55,7 @@ def update():
 
 
 def light():
-    moon = LitDirectionalLight(direction=Vec3(1.5, -1, 0), color=color.light_gray)
+    moon = LitDirectionalLight(direction=Vec3(1.6, -1, 0), color=color.gray, intensity=0.2)
     #lampka = LitPointLight(position=Vec3(0, 4.8, -1), range=10, intensity=0.5)
     #test= LitObject(model="cube", position=Vec3(0, 4.8, -1), color=color.light_gray, scale=0.1)
 

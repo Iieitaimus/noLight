@@ -49,7 +49,7 @@ def entities():
     lozko = LitObject(
         model="lozko",
         texture="lozko.png",
-        collider="mesh",
+        collider="box",
         scale=1.5,
         position=(-2.7, 0, 1.4),
         rotation=Vec3(0, 90, 0))
