@@ -84,6 +84,12 @@ def entities():
         collider="box",
         scale=3,
         position=(4.5, 3.5, -6))
+    kontakt = LitObject(
+        model="kontakt",
+        texture="kontakt.png",
+        collider="box",
+        scale=1,
+        position=(3, 3.5, -5.9))
     listwa = LitObject(
         model="listwa2",
         texture="listwa2.png",
