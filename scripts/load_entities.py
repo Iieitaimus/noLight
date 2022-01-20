@@ -6,10 +6,10 @@ from UrsinaLighting import LitObject
 def entities():
     Entity.default_shader = lit_with_shadows_shader
     platform = LitObject(
-        model="plane",
-        texture="grass",
-        scale=Vec3(10, 2, 20),
-        position=(-11, 3.5, -4))
+        model="plot",
+        texture="plot.png",
+        scale=1,
+        position=(-9, 3.5, -4))
     szafka = LitObject(
         model="szafka",
         texture="szafka.png",
@@ -92,7 +92,7 @@ def entities():
         position=(3, 3.5, -5.9))
     listwa = LitObject(
         model="listwa2",
-        texture="listwa2.png",
+        texture="sciana.jpg",
         scale=3,
         position=(0, 0, 0),
         collider="mesh")
@@ -107,6 +107,12 @@ def entities():
         scale=1.1,
         position=(-3.4, 2.6, -4.8),
         rotation=Vec3(0, 90, 0))
+    lampeczka = LitObject(
+        model="lampeczka",
+        texture="lampeczka.png",
+        scale=2,
+        position=(-1.7, 2.5, -4.8),
+        rotation=Vec3(0, -45, 0))
     komputer = LitObject(
         model="komputer",
         texture="komputer.png",
