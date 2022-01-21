@@ -1,6 +1,6 @@
 from ursina import *
 from UrsinaLighting import LitSpotLight, LitDirectionalLight, LitObject, LitPointLight
-from ursina.prefabs.first_person_controller import FirstPersonController
+from first_person_controller import FirstPersonController
 from load_entities import entities
 from ursina.mesh import *
 
@@ -40,19 +40,18 @@ def update():
         except:
             pass
 
-    if held_keys['c']:
-        player.scale = .8
-        player.jump_height = 0
-        player.speed = 0.001
-    else:
-        player.scale = 1.5
-        player.jump_height = 1
-        player.speed =10
+    # if held_keys['c']:
+    #     player.scale = .8
+    #     player.jump_height = 0
+    #     player.speed = 0.001
+    # else:
+    #     player.scale = 1.5
+    #     player.jump_height = 1
+    #     player.speed =10
 
-    if held_keys['shift']:
-        player.speed = 10
-    else:
-        player.speed = 5
+    # if held_keys['shift']:
+    #     player.speed = 10
+
 
 
 
