@@ -78,12 +78,12 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.3, 4.6, -3.75))
-    drzwi = LitObject(
-        model="drzwi",
-        texture="drzwi.png",
-        collider="box",
-        scale=3,
-        position=(4.5, 3.5, -6))
+    #drzwi = LitObject(
+        #model="drzwi",
+        #texture="drzwi.png",
+        #collider="box",
+        #scale=3,
+        #position=(4.5, 3.5, -6))
     kontakt = LitObject(
         model="kontakt",
         texture="kontakt.png",
@@ -131,3 +131,4 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.1, 4.6, 1.335))
+
