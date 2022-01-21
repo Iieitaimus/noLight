@@ -9,7 +9,7 @@ class Game(Ursina):
     def __init__(self, spawn):
         super().__init__()
         self.spawn = spawn
-        self.mm = MainMenu(play=self.play)      #Sequence(Wait(.01), Func(sys.exit))
+        self.mm = MainMenu(play=self.play)
         self.load = None
 
     @staticmethod
