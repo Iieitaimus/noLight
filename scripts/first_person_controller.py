@@ -18,7 +18,7 @@ class FirstPersonController(Entity):
 
         self.gravity = 1
         self.grounded = False
-        self.jump_height = 1
+        self.jump_height = 0.5
         self.jump_up_duration = .5
         self.fall_after = .35 # will interrupt jump up
         self.jumping = False

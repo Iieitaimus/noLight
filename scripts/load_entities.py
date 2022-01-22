@@ -39,12 +39,6 @@ def entities():
         texture="sciana.jpg",
         collider="mesh", scale=3,
         position=(0, 0, 0))
-    #sufit = LitObject(
-        #model="sufit",
-        #texture="sciana.jpg",
-        #scale=3,
-        #position=(0, 0, 0),
-        #collider="mesh")
     lozko = LitObject(
         model="lozko",
         texture="lozko.png",
@@ -89,12 +83,18 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.3, 4.6, -3.75))
-    #drzwi = LitObject(
-        #model="drzwi",
-        #texture="drzwi.png",
-        #collider="box",
-        #scale=3,
-        #position=(4.5, 3.5, -6))
+    okno2 = LitObject(
+        model="okno",
+        texture="okno.png",
+        collider="mesh",
+        scale=3,
+        position=(-6.3, 4.6, -12.75))
+    drzwi = LitObject(
+        model="drzwiOOO",
+        texture="drzwiOOO.png",
+        collider="mesh",
+        scale=Vec3(3, 2.9, 3),
+        position=(4.5, 3.4, -6))
     kontakt = LitObject(
         model="kontakt",
         texture="kontakt.png",
@@ -136,4 +136,10 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.1, 4.6, 1.335))
+    kratka2 = LitObject(
+        model="kratka",
+        texture="kratka.png",
+        collider="mesh",
+        scale=3,
+        position=(-6.1, 4.6, -17.8))
 
