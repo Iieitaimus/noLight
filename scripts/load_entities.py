@@ -34,18 +34,17 @@ def entities():
         scale=Vec3(2.3, 4, 2.4),
         position=(-3.51, 0.1, -4.7),
         rotation=Vec3(0, 90, 0))
-    biurko.collider = BoxCollider(biurko, size=Vec3(1.2, 3, 2))
     sciany = LitObject(
         model="sciany",
         texture="sciana.jpg",
         collider="mesh", scale=3,
         position=(0, 0, 0))
-    sufit = LitObject(
-        model="sufit",
-        texture="sciana.jpg",
-        scale=3,
-        position=(0, 0, 0),
-        collider="mesh")
+    #sufit = LitObject(
+        #model="sufit",
+        #texture="sciana.jpg",
+        #scale=3,
+        #position=(0, 0, 0),
+        #collider="mesh")
     lozko = LitObject(
         model="lozko",
         texture="lozko.png",
@@ -60,11 +59,23 @@ def entities():
         scale=Vec3(1, 0.7, 1),
         position=(4.5, 0.8, -5.6),
         rotation=Vec3(0, 0, 0))
+    schody2 = LitObject(
+        model="schody",
+        texture="schody.png",
+        collider="mesh",
+        scale=Vec3(1, 0.7, 1),
+        position=(4.5, 0.8, -11),
+        rotation=Vec3(0, 180, 0))
     podloga = LitObject(
         model="podloga",
         texture="podloga.png",
         collider="mesh", scale=3,
-        position=(0, 0.1, -1.5))
+        position=(0, 0.1, 0))
+    podloga2 = LitObject(
+        model="podloga2",
+        texture="beton.jpg",
+        collider="mesh", scale=3,
+        position=(0, 0.2, 0))
     krzeslo = LitObject(
         model="krzeslo",
         texture="krzeslo.png",
@@ -78,18 +89,24 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.3, 4.6, -3.75))
-    drzwi = LitObject(
-        model="drzwi",
-        texture="drzwi.png",
-        collider="box",
-        scale=3,
-        position=(4.5, 3.5, -6))
+    # drzwi = LitObject(
+    #     model="drzwi",
+    #     texture="drzwi.png",
+    #     collider="box",
+    #     scale=3,
+    #     position=(4.5, 3.5, -6))
     listwa = LitObject(
         model="listwa2",
         texture="sciana.jpg",
         scale=3,
         position=(0, 0, 0),
         collider="mesh")
+    kontakt = LitObject(
+        model="kontakt",
+        texture="kontakt.png",
+        collider="box",
+        scale=1,
+        position=(3, 3.5, -5.9))
     klawa = LitObject(
         model="klawa",
         texture="klawa.png",
@@ -126,4 +143,3 @@ def entities():
         scale=3,
         position=(-6.1, 4.6, 1.335))
 
-    drzwi.animate_rotation(value=(1, 0, 0), duration= 10000)
