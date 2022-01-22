@@ -84,12 +84,6 @@ def entities():
         collider="box",
         scale=3,
         position=(4.5, 3.5, -6))
-    kontakt = LitObject(
-        model="kontakt",
-        texture="kontakt.png",
-        collider="box",
-        scale=1,
-        position=(3, 3.5, -5.9))
     listwa = LitObject(
         model="listwa2",
         texture="sciana.jpg",
@@ -131,3 +125,5 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.1, 4.6, 1.335))
+
+    drzwi.animate_rotation(value=(1, 0, 0), duration= 10000)

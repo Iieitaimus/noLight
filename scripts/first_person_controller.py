@@ -61,6 +61,7 @@ class FirstPersonController(Entity):
             self.speed = 2
         else:
             self.scale = 1.5
+            self.jump_height = 2
 
         if self.gravity:
             # gravity
