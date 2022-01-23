@@ -188,4 +188,16 @@ def entities():
         scale=2.9,
         position=(-0.7, 2, -17.15))
     szafki.collider = BoxCollider(szafki, center=Vec3(0, 0, 0), size=Vec3(0.5, 1, 1.5))
+    rury1 = LitObject(
+        model="rury1",
+        texture="rury1.png",
+        collider="mesh",
+        scale=3,
+        position=(0.3, 0, -8.1))
+    rury2 = LitObject(
+        model="rury2",
+        texture="rury2.png",
+        collider="mesh",
+        scale=3,
+        position=(0.3, 0, -8.1))
 
