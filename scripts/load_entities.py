@@ -60,6 +60,18 @@ def entities():
         scale=Vec3(1, 0.7, 1),
         position=(4.5, 0.8, -11),
         rotation=Vec3(0, 180, 0))
+    Bschody = LitObject(
+        model="Bschody",
+        texture="schody.png",
+        collider="mesh",
+        scale=3,
+        position=(7.8, 2, -8.2))
+    BschodyCOL = LitObject(
+        model="BschodyCOL",
+        collider="mesh",
+        scale=3,
+        position=(7.8, 2, -8.2),
+        visible=False)
     podloga = LitObject(
         model="podloga",
         texture="podloga.png",
@@ -69,7 +81,7 @@ def entities():
         model="podloga2",
         texture="beton.jpg",
         collider="mesh", scale=3,
-        position=(0, 0.2, 0))
+        position=(0, 0.23, 0))
     krzeslo = LitObject(
         model="krzeslo",
         texture="krzeslo.png",
@@ -89,12 +101,19 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.3, 4.6, -12.75))
-    drzwi = LitObject(
-        model="drzwiOOO",
-        texture="drzwiOOO.png",
+    drzwiO1 = LitObject(
+        model="drzwiOP",
+        texture="drzwiOP.png",
         collider="mesh",
         scale=Vec3(3, 2.9, 3),
-        position=(4.5, 3.4, -6))
+        position=(4.35, 3.3, -6))
+    drzwiO2 = LitObject(
+        model="drzwiOP",
+        texture="drzwiOP.png",
+        collider="mesh",
+        scale=Vec3(3, 2.9, 3),
+        position=(4.65, 3.3, -10.5),
+        rotation=Vec3(0, 180, 0))
     # drzwi = LitObject(
     #     model="drzwi",
     #     texture="drzwi.png",
@@ -154,4 +173,19 @@ def entities():
         collider="mesh",
         scale=3,
         position=(-6.1, 4.6, -17.8))
+    szafki = LitObject(
+        model="szafki",
+        texture="szafka.png",
+        collider="box",
+        scale=2.9,
+        visible=False,
+        position=(-0.7, 2, -17.15))
+    szafki.collider = BoxCollider(szafki, center=Vec3(-1.5, 0, 0.75), size=Vec3(0.5, 1, 3))
+    szafki = LitObject(
+        model="szafki",
+        texture="szafka.png",
+        collider="box",
+        scale=2.9,
+        position=(-0.7, 2, -17.15))
+    szafki.collider = BoxCollider(szafki, center=Vec3(0, 0, 0), size=Vec3(0.5, 1, 1.5))
 
