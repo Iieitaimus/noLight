@@ -32,6 +32,8 @@ class LitObject(Entity):
                  smoothness=300, ambientStrength=0.05, normalMap=None, specularMap=None, water=False,
                  cubemap="assets/textures/cubemap_#.jpg", cubemapIntensity=0,
                  onUpdate=lambda self: None, **kwargs):
+        self.isOn = None
+        self.button = None
         super().__init__(
             shader=LitShader,
             model=model,
@@ -65,6 +67,7 @@ class LitObject(Entity):
         self.onUpdate = onUpdate
 
     def update(self):
+
         self.set_shader_input("lightsArray", LitLightList)
         self.set_shader_input("lightsArrayLength", Vec2(len(LitLightList), len(LitSpotList)))
         self.set_shader_input("spotArray", LitSpotList)

@@ -33,7 +33,6 @@ class FirstPersonController(Entity):
             if ray.hit:
                 self.y = ray.world_point.y
 
-
     def update(self):
         self.rotation_y += mouse.velocity[0] * self.mouse_sensitivity[1]
 
@@ -84,15 +83,9 @@ class FirstPersonController(Entity):
             self.y -= min(self.air_time, ray.distance-.05) * time.dt * 100
             self.air_time += time.dt * .25 * self.gravity
 
-
-
-
     def input(self, key):
         if key == 'space':
             self.jump()
-
-        if key == 'c' and not 'shift':
-            pass
 
     def jump(self):
         if not self.grounded:

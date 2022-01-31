@@ -1,9 +1,12 @@
+import time
+
 from ursina import *
 from settings import dev_settings, video_settings, app_settings
 from direct.stdpy import thread
 from mainn_menu import MainMenu
 from loading_screan import LoadingScreen
 from load_entities import entities
+
 
 class Game(Ursina):
     def __init__(self, spawn):
@@ -21,24 +24,25 @@ class Game(Ursina):
         window.borderless = False
         window.exit_button.input = None
 
-
     @staticmethod
     def applyAppSettings():
         window.title = app_settings['title']
 
     def play(self):
-        self.load = LoadingScreen()
         self.mm.cleanDel()
+        self.load = LoadingScreen()
+        #thread.start_new_thread(function=self.mm.cleanDel(), args='')
         thread.start_new_thread(function=entities(), args='')
 
-    def start(self):
-        self.applyAppSettings()
-        self.applyVideoSettings()
 
+    def start(self):
+        # self.applyAppSettings()
+        # self.applyVideoSettings()
+        pass
 
 
 if __name__ == '__main__':
-    game = Game(spawn=Vec3(0,0,0))
+    game = Game(spawn=Vec3(0, 0, 0))
     game.start()
 
     game.run()
