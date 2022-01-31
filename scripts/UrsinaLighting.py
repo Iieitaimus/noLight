@@ -169,10 +169,10 @@ if __name__ == "__main__":
 
     # load textures
     Texture.default_filtering = 'mipmap'
-    texture = Texture("swiatlo/textures/rocks_diff.jpg")
-    specTexture = Texture("swiatlo/textures/rocks_spec.jpg")
-    normTexture = Texture("swiatlo/textures/rocks_norm.exr")
-    skyboxTexture = Texture("swiatlo/textures/skybox.jpg")
+    texture = Texture("assets/textures/rocks_diff.jpg")
+    specTexture = Texture("assets/textures/rocks_spec.jpg")
+    normTexture = Texture("assets/textures//rocks_norm.exr")
+    skyboxTexture = Texture("assets/textures/skybox.jpg")
 
     # skybox
     skybox = Sky(model="sphere", double_sided=True, texture=skyboxTexture, rotation=(0, 90, 0))
