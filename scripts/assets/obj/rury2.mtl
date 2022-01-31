@@ -1,4 +1,4 @@
-# Blender MTL File: 'modular_industrial_pipes_01_4k.blend'
+# Blender MTL File: 'None'
 # Material Count: 1
 
 newmtl modular_industrial_pipes_01_group02.003
@@ -11,6 +11,4 @@ Ni 1.450000
 d 1.000000
 illum 2
 map_Bump E:\\ProjektUrsinaHorror\\textures\\modular_industrial_pipes_01_group02_nor_gl_4k.png
-map_Kd E:\\ProjektUrsinaHorror\\textures\\modular_industrial_pipes_01_group02_diff_4k.png
-map_Ns E:\\ProjektUrsinaHorror\\textures\\modular_industrial_pipes_01_group02_rough_4k.png
-refl E:\\ProjektUrsinaHorror\\textures\\modular_industrial_pipes_01_group02_metal_4k.png
+map_Kd E:\\ProjektUrsinaHorror\\textures\\modular_industrial_pipes_01_group02_metal_4k.png
