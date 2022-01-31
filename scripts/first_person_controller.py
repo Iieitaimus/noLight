@@ -18,7 +18,6 @@ class FirstPersonController(Entity):
 
         self.gravity = 1
         self.grounded = False
-        self.jump_height = 0.5
         self.jump_up_duration = .5
         self.fall_after = .35 # will interrupt jump up
         self.jumping = False
@@ -56,11 +55,9 @@ class FirstPersonController(Entity):
 
         if held_keys['c']:
             self.scale = .8
-            self.jump_height = 0
             self.speed = 2
         else:
             self.scale = 1.5
-            self.jump_height = 2
 
         if self.gravity:
             # gravity
@@ -83,9 +80,6 @@ class FirstPersonController(Entity):
             self.y -= min(self.air_time, ray.distance-.05) * time.dt * 100
             self.air_time += time.dt * .25 * self.gravity
 
-    def input(self, key):
-        if key == 'space':
-            self.jump()
 
     def jump(self):
         if not self.grounded:
