@@ -77,6 +77,11 @@ def entities():
         texture="podloga.png",
         collider="mesh", scale=3,
         position=(0, 0.1, 0))
+    SchodyDach = LitObject(
+        model="Bschodydach",
+        texture="sciana.jpg",
+        collider="mesh", scale=3,
+        position=( 0, 0, 0))
     podloga2 = LitObject(
         model="podloga2",
         texture="beton.jpg",
