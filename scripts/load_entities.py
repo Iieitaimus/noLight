@@ -3,6 +3,7 @@ from UrsinaLighting import LitObject, LitSpotLight
 
 
 
+
 platform = LitObject(
     model="plot",
     texture="plot.png",
@@ -114,12 +115,11 @@ drzwiO2 = LitObject(
     scale=Vec3(3, 2.9, 3),
     position=(4.65, 3.3, -10.5),
     rotation=Vec3(0, 180, 0))
-    # drzwi = LitObject(
-    #     model="drzwi",
-    #     texture="drzwi.png",
-    #     collider="box",
-    #     scale=3,
-    #     position=(4.5, 3.5, -6))
+SchodyDach = LitObject(
+    model="Bschodydach",
+    texture="sciana.jpg",
+    collider="mesh", scale=3,
+    position=( 0, 0, 0))
 listwa = LitObject(
     model="listwa2",
     texture="sciana.jpg",
