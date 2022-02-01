@@ -2,8 +2,6 @@ from ursina import *
 from UrsinaLighting import LitObject, LitSpotLight
 
 
-
-
 platform = LitObject(
     model="plot",
     texture="plot.png",
@@ -105,7 +103,7 @@ podloga2 = LitObject(
 krzeslo = LitObject(
     model="krzeslo",
     texture="krzeslo.png",
-    collider="mesh",
+    collider="box",
     scale=2.2,
     position=(-3.5, 0.2, -3.3),
     rotation=Vec3(0, 180, 0))
