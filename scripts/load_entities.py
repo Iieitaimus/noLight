@@ -236,4 +236,17 @@ kontakt2 = LitObject(
     scale=1,
     position=(15.3, 10, -7.5),
     rotation=Vec3(0, -90, 0))
+lampa51 = LitObject(
+    model="lampa5",
+    texture="lampa5.png",
+    #collider="box",
+    scale=1,
+    position=(14.3, 12.53, -8))
+lampa52 = LitObject(
+    model="lampa5",
+    texture="lampa5.png",
+    #collider="box",
+    scale=1,
+    position=(4, 5.9, -8))
+
 

@@ -123,7 +123,7 @@ class LitPointLight():
 
 
 class LitSpotLight():
-    def __init__(self, position=Vec3(0), color=Vec3(1), range=20, intensity=1, direction=Vec3(0), angle=30):
+    def __init__(self, position=Vec3(0), color=Vec3(1), range=20, intensity=1, direction=Vec3(0), angle=30,):
         self.listIndex = len(LitSpotList)
         self.position = position
         self.color = color
@@ -134,7 +134,8 @@ class LitSpotLight():
         LitSpotList.append(Vec4(color.x, color.y, color.z, range))
         LitSpotList.append(Vec4(position.x, position.y, position.z, intensity))
         LitSpotList.append(Vec4(direction.x, direction.y, direction.z, np.cos(np.radians(angle))))
-
+        pivot = LitObject()
+        DirectionalLight(parent=pivot, shadows=True)
     def setIntensity(self, intensity=1):
         self.intensity = intensity
         LitSpotList[self.listIndex + 1].w = intensity
@@ -187,7 +188,7 @@ if __name__ == "__main__":
     # lights
     sun = LitDirectionalLight(direction=Vec3(0.5, -0.6, 1))
     pointLight = LitPointLight(position=Vec3(-3, 1, 0), color=rgb(255, 0, 255))
-    spotLight = LitSpotLight(position=Vec3(0, 3, 0), direction=Vec3(0.5, -1, -1))
+    spotLight = LitSpotLight(position=Vec3(0, 3, 0), direction=Vec3(0.5, -1, -1), shadows=True)
 
     # player
     player = EditorCamera(rotation=(20, 0, 0))
