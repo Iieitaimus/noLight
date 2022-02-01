@@ -206,6 +206,12 @@ szafki = LitObject(
     collider="box",
     scale=2.9,
     position=(-0.7, 2, -17.15))
+drewno = LitObject(
+    model="drewno",
+    texture="drewno.png",
+    collider="box",
+    scale=3,
+    position=(-2.45, 1.4, -11))
 szafki.collider = BoxCollider(szafki, center=Vec3(0, 0, 0), size=Vec3(0.5, 1, 1.5))
 rury1 = LitObject(
     model="rury1",
@@ -225,4 +231,11 @@ kontakt = LitObject(
     scale=1,
     position=(3, 3.5, -5.9),
     isOn=False)
+kontakt2 = LitObject(
+    model="kontakt",
+    texture="kontakt.png",
+    collider="box",
+    scale=1,
+    position=(15.3, 10, -7.5),
+    rotation=Vec3(0, -90, 0))
 
