@@ -42,13 +42,13 @@ def switch(target, dist, lights):
 
     try:
         c += time.dt
-        if ray.hit and held_keys['e'] and not target.isOn and c > .8:
+        if ray.hit and held_keys['e'] and not target.isOn and c > 2:
             lampaOn(lights)
             target.isOn = True
             Audio('switchOn.mp3')
             c = 0
 
-        if ray.hit and held_keys['e'] and target.isOn and c > .8:
+        if ray.hit and held_keys['e'] and target.isOn and c > 2:
             lampaOff(lights)
             target.isOn = False
             Audio('switchOff.mp3')
@@ -66,7 +66,7 @@ mouse.visible = False
 player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0), scale=1.5)
 player.cursor = LitObject(parent=camera.ui, model="circle", color=color.black, scale=.012)
 
-#window.fullscreen = True
+window.fullscreen = True
 from load_entities import *
 light()
 # drzwiok = FrameAnimation3d('drzwiok', fps=60, loop=True, autoplay=True, texture="drzwi.png", position=(4.5, 3.5, -6), scale=3, collider="mesh")

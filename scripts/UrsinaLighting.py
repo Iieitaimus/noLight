@@ -29,8 +29,8 @@ class LitInit(Entity):
 class LitObject(Entity):
     def __init__(self, model='plane', scale=1, position=(0, 0, 0), rotation=(0, 0, 0), texture=None, collider=None,
                  color=rgb(255, 255, 255), tiling=Vec2(1), lightDirection=Vec3(0), lightColor=Vec3(1),
-                 smoothness=300, ambientStrength=0.05, normalMap=None, specularMap=None, water=False,
-                 cubemap="assets/textures/cubemap_#.jpg", cubemapIntensity=0,
+                 smoothness=128, ambientStrength=0.05, normalMap=None, specularMap=None, water=False,
+                 cubemap="assets/textures/cubemap_#.jpg", cubemapIntensity=0, shaders=True,
                  onUpdate=lambda self: None, **kwargs):
         self.isOn = None
         self.button = None
@@ -96,7 +96,7 @@ class LitDirectionalLight():
 
 
 class LitPointLight():
-    def __init__(self, position=Vec3(0), color=Vec3(1), range=20, intensity=1):
+    def __init__(self, position=Vec3(0), color=Vec3(1), range=20, intensity=1, shadows=True):
         self.listIndex = len(LitLightList)
         self.position = position
         self.color = color
