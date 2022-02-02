@@ -14,7 +14,7 @@ player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0), scale=1.5)
 player.cursor = LitObject(parent=camera.ui, model="circle", color=color.black, scale=.012)
 
 
-window.fullscreen = True
+#window.fullscreen = True
 
 
 def light():
@@ -36,14 +36,15 @@ light()
 # EditorCamera()
 
 
-def lampaOn():
+def lampaOn(switches):
     lampa_light.setIntensity(1)
-    print('on')
+    for switch in switches:
+
 
 
 def lampaOff():
     lampa_light.setIntensity(0)
-    print('off')
+
 
 
 def switch(target, dist):
@@ -60,7 +61,7 @@ def switch(target, dist):
         c += time.dt
 
         if ray.hit and held_keys['e'] and not target.isOn and c > 1:
-            lampaOn()
+            lampaOn(switches=[])
             target.isOn = True
             Audio('switchOn.mp3')
             c = 0
