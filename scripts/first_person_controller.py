@@ -53,7 +53,7 @@ class FirstPersonController(Entity):
         else:
             self.speed = 4
 
-        if held_keys['c']:
+        if held_keys['left control']:
             self.scale = .8
             self.speed = 2
         else:
@@ -88,9 +88,6 @@ class FirstPersonController(Entity):
         self.grounded = False
         self.animate_y(self.y+self.jump_height, self.jump_up_duration, resolution=int(1//time.dt), curve=curve.out_expo)
         invoke(self.start_fall, delay=self.fall_after)
-
-    def sprint(self):
-        self.speed = 10
 
     def start_fall(self):
         self.y_animator.pause()
