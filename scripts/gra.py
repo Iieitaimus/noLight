@@ -70,8 +70,10 @@ window.fullscreen = True
 from load_entities import *
 light()
 # drzwiok = FrameAnimation3d('drzwiok', fps=60, loop=True, autoplay=True, texture="drzwi.png", position=(4.5, 3.5, -6), scale=3, collider="mesh")
-# EditorCamera()
-
+EditorCamera()
+scene.fog_density = 1
+scene.fog_color = color.gray
+scene.fog = True
 
 if __name__ == '__main__':
     app.run()
