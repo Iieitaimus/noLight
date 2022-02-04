@@ -1,5 +1,4 @@
 from ursina import *
-from UrsinaLighting import LitObject
 
 
 class FirstPersonController(Entity):
@@ -43,84 +42,12 @@ class FirstPersonController(Entity):
             self.forward * (held_keys['w'] - held_keys['s'])
             + self.right * (held_keys['d'] - held_keys['a'])
             ).normalized()
-        self.rr = Vec3(
-            self.forward * (held_keys['w'] - held_keys['s'])
-            + self.right * 1
-        ).normalized()
-        self.ll = Vec3(
-            self.forward * (held_keys['w'] - held_keys['s'])
-            + self.right * -1
-        ).normalized()
-        self.aa = Vec3(
-            self.forward * 1
-            + self.right * (held_keys['d'] - held_keys['a'])
-        ).normalized()
-        self.aaa = Vec3(
-            self.forward * -1
-            + self.right * (held_keys['d'] - held_keys['a'])
-        ).normalized()
-        self.r = Vec3(
-            self.forward * 0
-            + self.right * 1
-        ).normalized()
-        self.l = Vec3(
-            self.forward * 0
-            + self.right * -1
-        ).normalized()
-        self.f = Vec3(
-            self.forward * 1
-            + self.right * 0
-        ).normalized()
-        self.b = Vec3(
-            self.forward * -1
-            + self.right * 0
-        ).normalized()
 
-        #print('direction: ', self.direction)
-        #print('test: ', (self.direction +Vec3()))
         feet_ray = raycast(self.position+Vec3(0,0.5,0), self.direction, ignore=(self,), distance=.5, debug=False)
-        head_ray = raycast(self.position + Vec3(0, self.height - .1, 0), self.direction, ignore=(self,), distance=.5,debug=False)
-        stomach_ray = raycast(self.position+Vec3(0, self.height/2, 0), self.direction, ignore=(self,), distance=.6, debug=False)
-
-        forward = raycast(self.position + Vec3(0.0, self.height/2, 0), self.f, ignore=(self,), distance=.5, debug=False)
-        backward = raycast(self.position+Vec3(0.0, self.height/2, 0),  self.b, ignore=(self,), distance=.5, debug=False)
-        right = raycast(self.position+Vec3(0.0, self.height/2, 0),  self.rr, ignore=(self,), distance=.5, debug=False)
-        left = raycast(self.position + Vec3(0.0, self.height/2, 0), self.ll, ignore=(self,), distance=.5, debug=False)
-        r = raycast(self.position + Vec3(0.0, self.height/2, 0), self.r, ignore=(self,), distance=.5, debug=False)
-        l = raycast(self.position + Vec3(0.0, self.height/2, 0), self.l, ignore=(self,), distance=.5, debug=False)
-
-        left_up = raycast(self.position + Vec3(0.0, self.height / 2, 0), self.aa, ignore=(self,), distance=.5, debug=False)
-        right_up = raycast(self.position + Vec3(0.0, self.height / 2, 0), self.aaa, ignore=(self,), distance=.5, debug=False)
-
-        if  held_keys['w'] and held_keys['a'] and not feet_ray.hit and not head_ray.hit and not stomach_ray.hit and not l.hit and not forward.hit:
+        head_ray = raycast(self.position+Vec3(0,self.height-.1,0), self.direction, ignore=(self,), distance=.5, debug=False)
+        stomach_ray = raycast(self.position+Vec3(0, self.height/2,0), self.direction, ignore=(self,), distance=.6, debug=False)
+        if not feet_ray.hit and not head_ray.hit and not stomach_ray.hit:
             self.position += self.direction * self.speed * time.dt
-
-        elif held_keys['w'] and held_keys['d'] and not feet_ray.hit and not head_ray.hit and not stomach_ray.hit and not r.hit and not forward.hit:
-            self.position += self.direction * self.speed * time.dt
-
-        elif held_keys['s'] and held_keys['d'] and not feet_ray.hit and not head_ray.hit and not stomach_ray.hit  and not r.hit and not backward.hit:
-            self.position += self.direction * self.speed * time.dt
-
-        elif held_keys['s'] and held_keys['a'] and not feet_ray.hit and not head_ray.hit and not stomach_ray.hit  and not l.hit and not backward.hit:
-            self.position += self.direction * self.speed * time.dt
-
-        elif held_keys['w'] and not feet_ray.hit and not head_ray.hit and not right.hit and not stomach_ray.hit and not left.hit and not r.hit and not l.hit:
-            self.position += self.direction * self.speed * time.dt
-
-        elif held_keys['s'] and not feet_ray.hit and not head_ray.hit and not right.hit and not stomach_ray.hit and not left.hit and not r.hit and not l.hit:
-            self.position += self.direction * self.speed * time.dt
-
-        elif held_keys['a'] and not feet_ray.hit and not head_ray.hit and not forward.hit and not stomach_ray.hit and not backward.hit and not left_up.hit and not right_up.hit:
-            self.position += self.direction * self.speed * time.dt
-
-        elif held_keys['d'] and not feet_ray.hit and not head_ray.hit and not forward.hit and not stomach_ray.hit and not backward.hit and not left.hit and not right_up.hit:
-            self.position += self.direction * self.speed * time.dt
-
-        # elif held_keys['w'] and held_keys['a'] and not feet_ray.hit and not head_ray.hit and not leftward.hit and not rightward.hit:
-        #     self.position += self.direction * self.speed * time.dt
-
-        # if not feet_ray.hit and not head_ray.hit:
-        #     self.position += self.direction * self.speed * time.dt
 
         if held_keys['shift']:
             self.speed = 7

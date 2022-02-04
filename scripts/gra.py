@@ -52,8 +52,7 @@ def update():
         switch(kontakt, dist=3, lights=[lampa_light])
 
 
-
-player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0), scale=1.5, model='postac')
+player = FirstPersonController(x=-4, z=-2, rotation=(0, 180, 0), scale=1.5)
 player.cursor = LitObject(parent=camera.ui, model="circle", color=color.black, scale=.012)
 
 
